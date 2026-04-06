@@ -1,0 +1,81 @@
+.hero-klicalia {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-etiqueta {
+  display: inline-block;
+  background-color: #EEF2FF;
+  color: #4F46E5;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+.hero-titulo {
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #111827;
+  max-width: 620px;
+}
+
+.hero-texto {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #4B5563;
+  max-width: 560px;
+}
+
+.hero-btn-principal {
+  background-color: #4F46E5;
+  color: #FFFFFF;
+  padding: 14px 24px;
+  border-radius: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  border: none;
+}
+
+.hero-btn-principal:hover {
+  background-color: #22C55E;
+  color: #FFFFFF;
+}
+
+.hero-btn-secundario {
+  background-color: #FFFFFF;
+  color: #1F2937;
+  padding: 14px 24px;
+  border-radius: 14px;
+  border: 1px solid #D1D5DB;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.hero-btn-secundario:hover {
+  border-color: #22C55E;
+  color: #22C55E;
+  background-color: #F9FAFB;
+}
+
+.hero-imagen {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 991.98px) {
+  .hero-titulo {
+    font-size: 2.2rem;
+  }
+
+  .hero-texto {
+    font-size: 1rem;
+  }
+
+  .hero-klicalia {
+    text-align: center;
+  }
+}
