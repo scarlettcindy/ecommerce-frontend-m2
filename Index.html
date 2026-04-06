@@ -7,24 +7,25 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-klicalia">
-    <div class="container-fluid px-4">
+  <div class="container-fluid px-4">
 
-       <div class="zona-logo">
-          <a class="navbar-brand logo-brand" href="index.html">
-            <img src="assets/images/Logo-completo.png" alt="Klicalia">
-          </a>
-        </div>
+    <a class="navbar-brand logo-brand" href="index.html">
+      <img src="assets/images/Logo-completo.png" alt="Klicalia">
+    </a>
 
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKlicalia" aria-controls="navbarKlicalia" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKlicalia" aria-controls="navbarKlicalia" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse navbar-layout" id="navbarKlicalia">
+    <div class="collapse navbar-collapse" id="navbarKlicalia">
+      <div class="navbar-desktop-layout w-100">
 
         <ul class="navbar-nav menu-centro mb-3 mb-lg-0">
           <li class="nav-item dropdown">
@@ -33,7 +34,8 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Lectoescritura</a></li>
-              <li><a class="dropdown-item" href="#">Matemáticas</a></li>
+              <li><a class="dropdown-item" href="#">Matemática</a></li>
+              <li><a class="dropdown-item" href="#">Ciencias</a></li>
               <li><a class="dropdown-item" href="#">Ver todos</a></li>
             </ul>
           </li>
@@ -44,31 +46,18 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Preescolar</a></li>
-              <li><a class="dropdown-item" href="#">Básica</a></li>
+              <li><a class="dropdown-item" href="#">Niños</a></li>
+              <li><a class="dropdown-item" href="#">Adolescentes</a></li>
               <li><a class="dropdown-item" href="#">Ver todos</a></li>
             </ul>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Contacto
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Ayuda</a></li>
-              <li><a class="dropdown-item" href="#">Correo</a></li>
-              <li><a class="dropdown-item" href="#">Redes</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
           </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Tienda
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Destacados</a></li>
-              <li><a class="dropdown-item" href="#">Ofertas</a></li>
-              <li><a class="dropdown-item" href="#">Novedades</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tienda</a>
           </li>
         </ul>
 
@@ -78,43 +67,227 @@
             <button class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
 
+          <div class="iconos-navbar">
+  <a href="#" class="icono-nav">
+    <i class="fa-regular fa-heart"></i>
+    <span class="contador-icono">0</span>
+  </a>
+
+  <a href="#" class="icono-nav">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span class="contador-icono">2</span>
+  </a>
+</div>
+
           <a href="login.html" class="btn-login">Iniciar sesión</a>
           <a href="registro.html" class="btn-registro">Registrarse</a>
         </div>
 
       </div>
     </div>
-  </nav>
 
-<section class="hero-klicalia container py-5">
-  <div class="row align-items-center">
-    
-    <div class="col-lg-6 text-center text-lg-start">
-      <span class="hero-etiqueta">Aprender a un Klic</span>
-      <h1 class="hero-titulo mt-3">
-        Recursos educativos digitales para enseñar, aprender y crear
-      </h1>
-      <p class="hero-texto mt-3">
-        Descubre packs, actividades y materiales diseñados para preescolares,
-        niños y adolescentes. Todo en un solo lugar, de forma simple y visual.
-      </p>
+  </div>
+</nav>
 
-      <div class="hero-botones mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-        <a href="#" class="btn hero-btn-principal">Explorar recursos</a>
-        <a href="#" class="btn hero-btn-secundario">Ver packs</a>
+
+<section class="hero-klicalia">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <div class="col-lg-6">
+        <div class="hero-contenido">
+          <span class="hero-badge">Aprender a un klic</span>
+          <h1>Recursos educativos digitales para aprender y crear</h1>
+          <p>
+            Descubre packs, actividades y materiales pensados para preescolar,
+            niños y adolescentes en una plataforma visual, cercana y fácil de usar.
+          </p>
+
+          <div class="hero-acciones">
+            <a href="#" class="btn hero-btn-principal">Explorar recursos</a>
+            <a href="#" class="btn hero-btn-secundario">Ver packs</a>
+          </div>
+        </div>
       </div>
+
+      <div class="col-lg-6">
+        <div class="hero-imagen-box">
+          <img src="assets\images\medium-shot-kid-taking-notes.jpg" alt="Klicalia recursos educativos" class="img-fluid hero-imagen">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="recursos-destacados py-5">
+  <div class="container">
+    
+    <div class="text-center seccion-encabezado mb-5">
+      <span class="seccion-etiqueta">RECURSOS</span>
+      <h2>Explora nuestros recursos destacados</h2>
+      <p>
+        Encuentra materiales, packs y actividades diseñados para apoyar el aprendizaje
+        de forma práctica, visual y accesible.
+      </p>
     </div>
 
-    <div class="col-lg-6 text-center mt-5 mt-lg-0">
-      <img src="assets\images\Imagenhero.png" alt="Recursos educativos Klicalia" class="img-fluid hero-imagen">
+    <div class="row g-4">
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="card recurso-card h-100">
+          <img src="assets\images\vertical-closeup-child-learning-write-letters.jpg" class="card-img-top" alt="Lectoescritura">
+          <div class="card-body">
+            <span class="badge-recurso badge-lila">Lenguaje</span>
+            <h5 class="card-title">Pack de lectoescritura inicial</h5>
+            <p class="card-text">Actividades visuales y prácticas para fortalecer lectura y escritura.</p>
+          </div>
+          <div class="card-footer recurso-footer">
+            <span class="precio-recurso">$4.990</span>
+            <a href="#" class="link-recurso">Ver más →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card recurso-card h-100">
+          <img src="assets\images\matamáticas img.png" class="card-img-top" alt="Matemática">
+          <div class="card-body">
+            <span class="badge-recurso badge-verde">Matemática</span>
+            <h5 class="card-title">Material de sumas y restas</h5>
+            <p class="card-text">Fichas listas para imprimir y trabajar operaciones básicas.</p>
+          </div>
+          <div class="card-footer recurso-footer">
+            <span class="precio-recurso">$3.990</span>
+            <a href="#" class="link-recurso">Ver más →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card recurso-card h-100">
+          <img src="assets\images\ciencias img.png" class="card-img-top" alt="Ciencias">
+          <div class="card-body">
+            <span class="badge-recurso badge-celeste">Ciencias</span>
+            <h5 class="card-title">Guía de experimentos simples</h5>
+            <p class="card-text">Recursos didácticos para fomentar observación y curiosidad.</p>
+          </div>
+          <div class="card-footer recurso-footer">
+            <span class="precio-recurso">$5.990</span>
+            <a href="#" class="link-recurso">Ver más →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card recurso-card h-100">
+          <img src="assets\images\adorable-hispanic-girl-student-sitting-table-drawing-paper-kindergarten.jpg" class="card-img-top" alt="Preescolar">
+          <div class="card-body">
+            <span class="badge-recurso badge-amarillo">Preescolar</span>
+            <h5 class="card-title">Actividades de iniciación</h5>
+            <p class="card-text">Materiales lúdicos para aprender jugando en primeras etapas.</p>
+          </div>
+          <div class="card-footer recurso-footer">
+            <span class="precio-recurso">$4.490</span>
+            <a href="#" class="link-recurso">Ver más →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="#" class="btn-ver-todo">Ver todos los recursos</a>
     </div>
 
   </div>
 </section>
 
-  <header>
-  
-  </header>
+<section class="planes-klicalia py-5">
+  <div class="container">
+
+    <div class="text-center seccion-encabezado mb-5">
+      <h2>Elige tu plan</h2>
+      <p>
+        Accede a recursos, packs y materiales educativos según tus necesidades.
+        Encuentra la opción ideal para aprender, enseñar y crear.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="plan-card h-100">
+          <div class="plan-header">
+            <h3>$0</h3>
+            <span>Plan gratuito</span>
+          </div>
+
+          <div class="plan-body">
+            <ul class="plan-lista">
+              <li>Acceso a recursos básicos</li>
+              <li>Material gratuito seleccionado</li>
+              <li>Descargas limitadas</li>
+              <li>Exploración de categorías</li>
+              <li>Soporte básico</li>
+            </ul>
+          </div>
+
+          <div class="plan-footer">
+            <a href="#" class="btn-plan">Comenzar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="plan-card plan-destacado h-100">
+          <div class="plan-header">
+            <h3>$5.990</h3>
+            <span>Plan premium</span>
+          </div>
+
+          <div class="plan-body">
+            <ul class="plan-lista">
+              <li>Acceso a más recursos</li>
+              <li>Packs exclusivos</li>
+              <li>Descargas ampliadas</li>
+              <li>Contenido actualizado</li>
+              <li>Soporte preferente</li>
+            </ul>
+          </div>
+
+          <div class="plan-footer">
+            <a href="#" class="btn-plan">Elegir plan</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="plan-card h-100">
+          <div class="plan-header">
+            <h3>$9.990</h3>
+            <span>Plan Pro</span>
+          </div>
+
+          <div class="plan-body">
+            <ul class="plan-lista">
+              <li>Acceso completo a recursos</li>
+              <li>Packs premium ilimitados</li>
+              <li>Materiales exclusivos</li>
+              <li>Clases particulares</li>
+              <li>Soporte avanzado</li>
+            </ul>
+          </div>
+
+          <div class="plan-footer">
+            <a href="#" class="btn-plan">Elegir plan</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
