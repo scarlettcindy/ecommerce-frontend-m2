@@ -369,3 +369,137 @@
 .plan-destacado .plan-header {
   background: linear-gradient(135deg, #4f46e5 0%, #22c55e 100%);
 }
+
+.talleres-klicalia {
+  background-color: #ffffff;
+}
+
+.taller-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.taller-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+}
+
+.taller-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.taller-card .card-body {
+  padding: 1.4rem;
+}
+
+.badge-taller {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+.badge-lila {
+  background-color: #8b5cf6;
+}
+
+.badge-verde {
+  background-color: #22c55e;
+}
+
+.badge-celeste {
+  background-color: #06b6d4;
+}
+
+.badge-amarillo {
+  background-color: #f59e0b;
+}
+
+.taller-card .card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.taller-card .card-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.98rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.precio-box {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.precio-antiguo {
+  font-size: 1rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+  font-family: 'Inter', sans-serif;
+}
+
+.precio-actual {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #4f46e5;
+  font-family: 'Inter', sans-serif;
+}
+
+.taller-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  padding: 1rem 1.4rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-agregar-carrito {
+  background-color: #4F46E5;
+  color: #ffffff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.btn-agregar-carrito:hover {
+  background-color: #22C55E;
+}
+
+.btn-agregar-favorito {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  color: #ef4444;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-agregar-favorito:hover {
+  background-color: #fef2f2;
+  border-color: #ef4444;
+}
+

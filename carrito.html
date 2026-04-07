@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito | Klicalia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/carrito-pagina.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-klicalia">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand logo-brand" href="index.html">
+        <img src="assets/images/Logo-completo.png" alt="Klicalia">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKlicalia">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarKlicalia">
+        <div class="navbar-desktop-layout w-100">
+          <ul class="navbar-nav menu-centro mb-3 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#talleres">Talleres</a></li>
+            <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">Contacto</a></li>
+          </ul>
+
+          <div class="acciones-navbar">
+            <div class="iconos-navbar">
+              <a href="#" class="icono-nav">
+                <i class="fa-regular fa-heart"></i>
+                <span class="contador-icono" id="contador-favoritos">0</span>
+              </a>
+
+              <a href="carrito.html" class="icono-nav">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="contador-icono" id="contador-carrito">0</span>
+              </a>
+            </div>
+
+            <a href="#" class="btn-login">Iniciar sesión</a>
+            <a href="#" class="btn-registro">Registrarse</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="carrito-page">
+    <div class="container py-5">
+      <div class="row g-5">
+
+        <div class="col-lg-8">
+          <section class="carrito-listado">
+            <h1 class="carrito-titulo">Carrito</h1>
+            <p class="carrito-subtitulo">
+              <span id="cantidad-items-texto">1</span> taller en tu carrito
+            </p>
+
+            <div id="lista-carrito">
+
+              <article class="item-carrito" data-precio="4990">
+                <div class="item-imagen">
+                  <img src="assets\images\arrangement-different-letters-speech-therapy-sessions.jpg" alt="Taller de lectoescritura">
+                </div>
+
+                <div class="item-info">
+                  <h2>Taller de lectoescritura inicial</h2>
+                  <p class="item-autor">Por Klicalia</p>
+
+                  <div class="item-meta">
+                    <span class="item-badge">Destacado</span>
+                    <span>4.9 ★★★★★</span>
+                  </div>
+
+                  <div class="item-detalles">
+                    <span>Material imprimible</span>
+                    <span>•</span>
+                    <span>Acceso digital</span>
+                    <span>•</span>
+                    <span>Nivel inicial</span>
+                  </div>
+                </div>
+
+                <div class="item-acciones">
+                  <button class="btn-eliminar-item">Eliminar</button>
+                  <button class="btn-guardar-item">Guardar para después</button>
+                </div>
+
+                <div class="item-precio">
+                  <span class="precio-actual-item">$4.990</span>
+                  <span class="precio-antiguo-item">$7.990</span>
+                </div>
+              </article>
+
+            </div>
+          </section>
+        </div>
+
+        <div class="col-lg-4">
+          <aside class="resumen-carrito">
+            <h3>Total:</h3>
+            <div class="resumen-total" id="resumen-total">$4.990</div>
+            <div class="resumen-antiguo">$7.990</div>
+            <div class="resumen-descuento">Ahorro en precio promocional</div>
+
+            <button class="btn-pagar">Proceder al pago <i class="fa-solid fa-arrow-right"></i></button>
+
+            <p class="resumen-texto">Aún no se realiza ningún cobro. Este es un carrito simulado.</p>
+
+            <button class="btn-cupon">Aplicar cupón</button>
+          </aside>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-klicalia" id="footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <h4>Klicalia</h4>
+          <p>
+            Recursos educativos digitales para aprender, enseñar y crear
+            en un entorno moderno, visual y accesible.
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5>Redes</h5>
+          <ul class="footer-lista">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h5>Contacto</h5>
+          <p class="footer-correo">contacto@klicalia.com</p>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <p>© 2026 Klicalia. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="btn-arriba" class="btn-scroll-top">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scroll.js"></script>
+  <script src="assets/js/carrito-pagina.js"></script>
+</body>
+</html>

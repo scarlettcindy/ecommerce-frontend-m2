@@ -53,7 +53,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
 
           <li class="nav-item">
@@ -70,13 +70,13 @@
           <div class="iconos-navbar">
   <a href="#" class="icono-nav">
     <i class="fa-regular fa-heart"></i>
-    <span class="contador-icono">0</span>
+    <span class="contador-icono" id="contador-favoritos">0</span>
   </a>
 
-  <a href="#" class="icono-nav">
-    <i class="fa-solid fa-cart-shopping"></i>
-    <span class="contador-icono">2</span>
-  </a>
+  <a href="carrito.html" class="icono-nav">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span class="contador-icono" id="contador-carrito">0</span>
+</a>
 </div>
 
           <a href="login.html" class="btn-login">Iniciar sesión</a>
@@ -203,6 +203,125 @@
   </div>
 </section>
 
+<section class="talleres-klicalia py-5">
+  <div class="container">
+
+    <div class="text-center seccion-encabezado mb-5">
+      <span class="seccion-etiqueta">TALLERES</span>
+      <h2>Explora nuestros talleres y recursos</h2>
+      <p>
+        Descubre materiales, talleres y actividades diseñados para apoyar
+        distintas etapas del aprendizaje.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card taller-card h-100">
+          <a href="detalle-lectoescritura.html">
+          <img src="assets\images\arrangement-different-letters-speech-therapy-sessions.jpg" class="card-img-top" alt="Taller de lectoescritura">
+          </a>
+          <div class="card-body">
+            <span class="badge-taller badge-lila">Lenguaje</span>
+            <h5 class="card-title">Taller de lectoescritura</h5>
+            <p class="card-text">Actividades prácticas para fortalecer lectura y escritura.</p>
+            <div class="precio-box">
+              <span class="precio-antiguo">$7.990</span>
+              <span class="precio-actual">$4.990</span>
+            </div>
+          </div>
+          <div class="card-footer taller-footer">
+            <button class="btn-agregar-carrito" data-nombre="Taller de lectoescritura inicial">
+              Agregar al carrito
+            </button>
+            <button class="btn-agregar-favorito" data-nombre="Taller de lectoescritura inicial">
+              ♥
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card taller-card h-100">
+          <a href="detalle-matematica.html">
+          <img src="assets\images\matematicas-taller.png" class="card-img-top" alt="Taller de matemáticas">
+          </a>
+          <div class="card-body">
+            <span class="badge-taller badge-verde">Matemática</span>
+            <h5 class="card-title">Taller de matemática primer ciclo</h5>
+            <p class="card-text">Material visual y dinámico para trabajar operaciones básicas.</p>
+            <div class="precio-box">
+              <span class="precio-antiguo">$6.990</span>
+              <span class="precio-actual">$4.490</span>
+            </div>
+          </div>
+          <div class="card-footer taller-footer">
+            <button class="btn-agregar-carrito" data-nombre="Taller de sumas y restas">
+              Agregar al carrito
+            </button>
+            <button class="btn-agregar-favorito" data-nombre="Taller de sumas y restas">
+              ♥
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card taller-card h-100">
+          <a href="detalle-arte.html">
+          <img src="assets\images\close-up-mom-helping-son-paint-eggs.jpg" class="card-img-top" alt="Taller de artes">
+          </a>
+          <div class="card-body">
+            <span class="badge-taller badge-celeste">Artes</span>
+            <h5 class="card-title">Taller de arte</h5>
+            <p class="card-text">Actividades creativas para pintar, recortar, crear y expresar ideas con arte.</p>
+            <div class="precio-box">
+              <span class="precio-antiguo">$8.990</span>
+              <span class="precio-actual">$5.990</span>
+            </div>
+          </div>
+          <div class="card-footer taller-footer">
+            <button class="btn-agregar-carrito" data-nombre="Taller de arte">
+              Agregar al carrito
+            </button>
+            <button class="btn-agregar-favorito" data-nombre="Taller de arte">
+              ♥
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="card taller-card h-100">
+          <a href="detalle-ingles.html">
+          <img src="assets\images\inglés-taller.png" class="card-img-top" alt="Taller de inglés">
+          </a>
+          <div class="card-body">
+            <span class="badge-taller badge-amarillo">Idiomas</span>
+            <h5 class="card-title">Taller de inglés</h5>
+            <p class="card-text">Material didáctico para aprender vocabulario, palabras y expresiones básicas en inglés.</p>
+            <div class="precio-box">
+              <span class="precio-antiguo">$6.490</span>
+              <span class="precio-actual">$3.990</span>
+            </div>
+          </div>
+          <div class="card-footer taller-footer">
+            <button class="btn-agregar-carrito" data-nombre="Taller de inglés">
+              Agregar al carrito
+            </button>
+            <button class="btn-agregar-favorito" data-nombre="Taller de inglés">
+              ♥
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 <section class="planes-klicalia py-5">
   <div class="container">
 
@@ -289,6 +408,95 @@
   </div>
 </section>
 
+
+
+<section class="articulos-klicalia py-5">
+  <div class="container">
+    <div class="text-center seccion-encabezado mb-5">
+      <span class="seccion-etiqueta">Y ALGO MÁS...</span>
+      <h2>¿Por qué elegir Klicalia?</h2>
+      <p>
+        Descubre cómo nuestros recursos y materiales pueden apoyar el aprendizaje
+        de forma más clara, práctica y creativa.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      
+      <div class="col-lg-4 col-md-6">
+        <article class="articulo-card h-100">
+          <h3>Materiales listos para usar</h3>
+          <p>
+            Klicalia reúne actividades, fichas y recursos digitales pensados para
+            facilitar el trabajo de familias y estudiantes.
+          </p>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="articulo-card h-100">
+          <h3>Diseño visual y accesible</h3>
+          <p>
+            La plataforma busca ofrecer una experiencia ordenada, cercana y moderna,
+            para que encontrar recursos sea simple e intuitivo.
+          </p>
+        </article>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <article class="articulo-card h-100">
+          <h3>Apoyo a distintas etapas</h3>
+          <p>
+            Desde preescolar hasta niveles más avanzados, Klicalia organiza sus
+            contenidos para responder a distintas necesidades educativas.
+          </p>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer-klicalia">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <div class="col-lg-4 col-md-6">
+        <h4>Klicalia</h4>
+        <p>
+          Recursos educativos digitales para aprender y crear
+          en un entorno moderno, visual y accesible.
+        </p>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <h5>Redes</h5>
+        <ul class="footer-lista">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <h5>Contacto</h5>
+        <p class="footer-correo">contacto@klicalia.com</p>
+      </div>
+
+    </div>
+
+    <div class="footer-copy">
+      <p>© 2026 Klicalia. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="btn-arriba" class="btn-scroll-top">↑</button>
+
+<script src="assets/js/scroll.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/carrito.js"></script>
 </body>
 </html>
